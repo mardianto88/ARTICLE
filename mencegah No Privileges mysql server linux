@@ -1,2 +1,15 @@
 1.  mysql -u root -p
-2. 
+2.  CREATE USER 'root'@'localhost 'IDENTIFIED BY 'upt123';
+3.  GRANT ALL PRIVILEGES ON *.* TO 'root'@localhost' WITH GRANT OPTION;
+4.  FLUSH PRIVILEGES;
+5.  nano /etc/dbconfig-common/phpmyadmin.conf
+Masukan Perintah
+-------------------------------------------------------------------------
+# dbc_dbuser: database user
+#       the name of the user who we will use to connect to the database.
+dbc_dbuser='root'
+
+#dbc_dbpass : database user password
+#      the password to use with the above username when connecting.
+#      to a database, if one is required
+dbc_dbpass='upt123'
