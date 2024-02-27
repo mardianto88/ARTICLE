@@ -1,0 +1,9 @@
+sudo apt update
+sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils
+sudo apt install xrdp 
+sudo systemctl status xrdp
+sudo adduser upt123 ssl-cert  
+sudo systemctl restart xrdp
+Configuring Firewall #
+sudo ufw allow from 202.192.19.0/24 to any port 3389 
+sudo ufw allow 3389
