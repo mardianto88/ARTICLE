@@ -1,0 +1,8 @@
+1. nano /etc/mysql/mysql.conf.d/mysqld.cnf
+2 ubah bind-address : 127.0.0.1 menjadi bind-address 0.0.0.0
+  kemudian ctl+x kemudian y dan enter, lalu restart mysql dengan perintah nomor 3
+3. service mysql restart
+4. mysql
+5. CREATE USER 'abcd'@'%' IDENTIFIED BY 'afika123';
+6 GRANT ALL PRIVILEGES ON *.* TO 'abcd'@'%';
+7. exit
