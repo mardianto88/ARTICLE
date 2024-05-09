@@ -5,4 +5,5 @@
 4. mysql
 5. CREATE USER 'abcd'@'%' IDENTIFIED BY 'afika123';
 6 GRANT ALL PRIVILEGES ON *.* TO 'abcd'@'%';
-7. exit
+7 FLUSH PRIVILEGES; 
+8. exit
